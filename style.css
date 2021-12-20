@@ -7,11 +7,15 @@ body {
 }
 
 .header {
-    background-color: #1F2937;
     display: flex;
     flex-direction: column;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.header,
+.footer {
+    background-color: #1F2937;
 }
 
 .header-top {
@@ -41,13 +45,15 @@ a {
 }
 
 a,
-.header-left .body {
+.header-left .body,
+.footer {
     color: #E5E7EB;
 }
 
 a,
 .header-left .body, 
-.picture-wrapper .info .text {
+.picture-wrapper .info .text,
+.call-to-action-wrapper .left .subtext {
     font-size: 18px;
 }
 
@@ -80,19 +86,16 @@ a,
     color: #E5E7EB;
 }
 
-.header-left .signup {
-    background-color: #3882F6;
-    color: #E5E7EB;
-}
-
 .signup {
-    width: 86px;
+    width: 120px;
     border-radius: 8px;
     border: none;
     padding: 5px 10px;
     margin-top: 5px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
+    background-color: #3882F6;
+    color: #E5E7EB;
 }
 
 .information-wrapper {
@@ -101,7 +104,7 @@ a,
     justify-content: center;
     gap: 20px;
     align-content: center;
-    padding: 20px 15% 20px 15%;
+    padding: 30px 15% 30px 15%;
 }
 
 .information-wrapper .title {
@@ -132,4 +135,54 @@ a,
     flex: 1 1 auto;
     border-style: solid;
     border-color: #3882F6;
+}
+
+.quote-wrapper {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20% 40px 20%;
+}
+.quote-wrapper .quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-wrapper .speaker {
+    text-align: right;
+    align-self: flex-end;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.call-to-action-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+    margin: 40px 15% 40px 15%;
+    padding: 40px 8% 40px 8%;
+}
+
+.call-to-action-wrapper .left .title {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.call-to-action-wrapper .signup {
+    border-color: white;
+    border: solid;
+    border-width: 4px;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 40px;
 }
